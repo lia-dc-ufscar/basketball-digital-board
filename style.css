@@ -15,13 +15,13 @@
 #container {
 	background: url('images/background.png');
 	width: 1280px;
-	height: 800px;
+	height: 752px;
 }
 
 /* Court canvas */
 
 #court {
-	margin-top: 15px;
+	margin-top: 11px;
 	margin-left: 12px;
 }
 
@@ -30,7 +30,7 @@
 #mover {
 	position: absolute;
 	margin-top: 15px;
-	margin-left: 12px;
+	margin-left: 11px;
 	width: 30px;
 	height: 30px;
 	background: url('images/mover.png');
@@ -43,7 +43,7 @@
 	margin-top: 15px;
 	margin-right: 9px;
 	width: 159px;
-	height: 770px;
+	height: 720px;
 }
 
 /* Options menu */
@@ -101,7 +101,7 @@
 	width: 272px;
 	height: 132px;
 	margin-left: 70px;
-	margin-top: 565px;
+	margin-top: 515px;
 }
 
 #balloon-info-help {
@@ -110,5 +110,5 @@
 	width: 272px;
 	height: 98px;
 	margin-left: 790px;
-	margin-top: 600px;
+	margin-top: 550px;
 }
