@@ -1,0 +1,114 @@
+/* 	Basketball Digital Board style.css file
+/*	A project by LIA - Advanced Interaction Laboratory
+/*	Authors:	Yago Arroyo Gonçalves
+/*				George Pagliuso
+*/
+
+/* Small reset on margins and paddings */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Application container */
+
+#container {
+	background: url('images/background.png');
+	width: 1280px;
+	height: 800px;
+}
+
+/* Court canvas */
+
+#court {
+	margin-top: 15px;
+	margin-left: 12px;
+}
+
+/* Move button */
+
+#mover {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 12px;
+	width: 30px;
+	height: 30px;
+	background: url('images/mover.png');
+}
+
+/* Saved tactics menu */
+
+#saved-tactics {
+	float: right;
+	margin-top: 15px;
+	margin-right: 9px;
+	width: 159px;
+	height: 770px;
+}
+
+/* Options menu */
+
+#menu {
+	margin-top: 15px;
+	margin-left: 13px;
+	padding: 0 33px;
+	width: 995px;
+	height: 93px;
+}
+
+.button {
+	float: left;
+	margin-left: 25px;
+	width: 88px;
+	height: 88px;
+	background: url('images/button.png');
+}
+
+
+.active {
+	background: url('images/button-act.png');
+}
+
+.spacer {
+	float: left;
+	background: url('images/divider.png') center no-repeat;
+	height: 73px;
+	width: 2px;
+	margin: 6px 20px 0 45px;
+}
+
+/* Info balloons */
+
+#info-balloons {
+	position: absolute;
+	background: url('images/info-balloons.png');
+	width: 1000px;
+	height: 700px;
+}
+
+#balloon-save-open {
+	position: absolute;
+	background: url('images/info/save-open.png');
+	width: 282px;
+	height: 234px;
+	margin-left: 830px;
+	margin-top: 20px;
+}
+
+#balloon-delete {
+	position: absolute;
+	background: url('images/info/delete.png');
+	width: 272px;
+	height: 132px;
+	margin-left: 70px;
+	margin-top: 565px;
+}
+
+#balloon-info-help {
+	position: absolute;
+	background: url('images/info/info-help.png');
+	width: 272px;
+	height: 98px;
+	margin-left: 790px;
+	margin-top: 600px;
+}

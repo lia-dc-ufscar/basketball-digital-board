@@ -1,0 +1,66 @@
+<!--
+    Basketball Digital Board script.js file
+    A project by LIA - Advanced Interaction Laboratory
+    Authors:    Yago Arroyo Gonçalves
+                George Pagliuso
+-->
+
+<!DOCTYPE html>
+<html>
+<title>Basketball Digital Board</title>
+<link href="style.css" media="all" rel="Stylesheet" type="text/css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<body onload="init()">
+    <div id="container">
+        <!-- Info Balloons -->
+        <div id="info-balloons">
+            <div id="balloon-save-open"></div>
+            <div id="balloon-delete"></div>
+            <div id="balloon-info-help"></div>
+        </div>
+        <!-- /Info Balloons -->
+
+        <!-- Saved Tactics Menu -->
+        <div id="saved-tactics">
+            <img src="images/saved-tactics.png" />
+        </div>
+         <!-- /Saved Tactics Menu -->
+
+        <!-- Court Canvas -->
+        <div id="mover" onclick="move()"></div>
+        <canvas id="court" width="1085px" height="663px" ></canvas>
+        <!-- /Court Canvas -->
+
+        <!-- Buttons Menu -->
+        <div id="menu">
+            <div class="button"  id="delete" onclick="erase()">
+                <img src="images/delete.png" />
+            </div>
+            <div class="spacer"></div>
+            <div class="button active" id="black" onclick="set_color(this)">
+                <img src="images/black-marker.png" />
+            </div>
+            <div class="button" id="red" onclick="set_color(this)">
+                <img src="images/red-marker.png" />
+            </div>
+            <div class="button" id="blue" onclick="set_color(this)">
+                <img src="images/blue-marker.png" />
+            </div>
+            <div class="spacer"></div>
+            <div class="button active" id="solid" onclick="line_type(this)">
+                <img src="images/line-solid.png" />
+            </div>
+            <div class="button" id="dashed" onclick="line_type(this)">
+                <img src="images/line-dashed.png" />
+            </div>
+            <div class="spacer"></div>
+            <div class="button active" id="info" onclick="show_info(this)">
+                <img src="images/info.png" />
+            </div>
+        </div>
+        <!-- /Buttons Menu -->
+   </div>
+</body>
+</html>
