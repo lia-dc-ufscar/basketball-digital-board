@@ -9,8 +9,9 @@
 <html>
 <title>Basketball Digital Board</title>
 <link href="style.css" media="all" rel="Stylesheet" type="text/css">
-<script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="svgcanvas.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 <body onload="init()">
     <div id="container">
@@ -30,7 +31,7 @@
 
         <!-- Court Canvas -->
         <div id="mover" onclick="move()"></div>
-        <canvas id="court" width="1085px" height="618px"></canvas>
+        <div id="court"></div>
         <!-- /Court Canvas -->
 
         <!-- Buttons Menu -->
