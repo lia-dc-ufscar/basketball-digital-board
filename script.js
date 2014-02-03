@@ -9,6 +9,32 @@
 // Return:      none
 function init() {
     svgCanvas = new SvgCanvas(document.getElementById("court"));
+
+    //  The piece of code below will get touches to behave like
+    //  mouse clicks.
+    //  Code originally from:
+    //  http://stackoverflow.com/questions/8058699/drag-drop-on-mobile-devices-using-some-code-that-translates-event-code-included
+
+    $("#court").children().bind('touchstart touchmove touchend touchcancel', function(){
+        var touches = event.changedTouches,    first = touches[0],    type = ""; 
+        switch(event.type){    
+          case "touchstart": type = "mousedown"; 
+        break;    
+          case "touchmove":  type="mousemove"; 
+        break;            
+          case "touchend":   type="mouseup"; 
+        break;    
+          default: return;
+        }
+
+        var simulatedEvent = document.createEvent("MouseEvent");
+        simulatedEvent.initMouseEvent(type, true, true, window, 1,
+                          first.screenX, first.screenY,
+                          first.clientX, first.clientY, false,
+                          false, false, false, 0/*left*/, null);
+        first.target.dispatchEvent(simulatedEvent);
+        event.preventDefault();
+    });
 }
 
 // Function:    set_color
