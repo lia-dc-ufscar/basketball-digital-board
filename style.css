@@ -23,8 +23,6 @@
 #court {
 	padding-top: 14px;
 	margin-left: 12px;
-	width: 1086px;
-	height: 618px;
 }
 
 /* Move button */
@@ -51,7 +49,7 @@
 /* Options menu */
 
 #menu {
-	margin-top: 18px;
+	margin-top: 12px;
 	margin-left: 13px;
 	padding: 0 33px;
 	width: 995px;
@@ -60,7 +58,7 @@
 
 .button {
 	float: left;
-	margin-left: 25px;
+	margin-left: 15px;
 	width: 88px;
 	height: 88px;
 	background: url('images/button.png');
@@ -75,7 +73,7 @@
 	background: url('images/divider.png') center no-repeat;
 	height: 73px;
 	width: 2px;
-	margin: 6px 20px 0 45px;
+	margin: 6px 20px 0 35px;
 }
 
 /* Info balloons */

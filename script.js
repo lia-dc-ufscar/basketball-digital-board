@@ -51,12 +51,21 @@ function set_color(obj) {
         $("#blue").removeClass("active");
     else if ($("#red").hasClass("active"))
         $("#red").removeClass("active");
+    else if ($("#eraser").hasClass("active")) {
+        $("#eraser").removeClass("active");
+        ctx.lineWidth = 3;
+        ctx.globalCompositeOperation = 'source-over';
+    }
 
     // Make clicked active
     $("#"+obj.id).addClass("active");
 
     // Select line color
-    svgCanvas.setStrokeColor(obj.id);
+    if (obj.id == 'eraser') {
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.lineWidth = 20;
+    } else
+        ctx.strokeStyle = obj.id;
 }
 
 // Function:    line_type
@@ -78,10 +87,10 @@ function line_type(obj) {
     // Select line type
     switch (obj.id) {
         case "solid":
-            svgCanvas.setStrokeStyle('0');
+            ctx.setLineDash([0]);
             break;
         case "dashed":
-            svgCanvas.setStrokeStyle('25,15');
+            ctx.setLineDash([25,15]);
             break;
     }
 }
@@ -92,7 +101,7 @@ function line_type(obj) {
 // Return:      none
 
 function erase() {
-    svgCanvas.clear();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 // Function:    save

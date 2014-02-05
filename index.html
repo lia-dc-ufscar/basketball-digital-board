@@ -10,7 +10,7 @@
 <title>Basketball Digital Board</title>
 <link href="style.css" media="all" rel="Stylesheet" type="text/css">
 <script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="svgcanvas.js"></script>
+<script type="text/javascript" src="drawing.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
 <body onload="init()">
@@ -31,7 +31,7 @@
 
         <!-- Court Canvas -->
         <div id="mover" onclick="move()"></div>
-        <div id="court"></div>
+        <canvas id="court" width="1085px" height="618px"></canvas>
         <!-- /Court Canvas -->
 
         <!-- Buttons Menu -->
@@ -48,6 +48,9 @@
             </div>
             <div class="button" id="blue" onclick="set_color(this)">
                 <img src="images/blue-marker.png" />
+            </div>
+            <div class="button" id="eraser" onclick="set_color(this)">
+                <img src="images/eraser.png" />
             </div>
             <div class="spacer"></div>
             <div class="button active" id="solid" onclick="line_type(this)">
