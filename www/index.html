@@ -8,10 +8,10 @@
 <!DOCTYPE html>
 <html>
 <title>Basketball Digital Board</title>
-<link href="style.css" media="all" rel="Stylesheet" type="text/css">
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="drawing.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<link href="css/style.css" media="all" rel="Stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/drawing.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 <body onload="init()">
     <div id="container">
@@ -25,7 +25,7 @@
 
         <!-- Saved Tactics Menu -->
         <div id="saved-tactics">
-            <img src="images/saved-tactics.png" />
+            <img src="img/saved-tactics.png" />
         </div>
          <!-- /Saved Tactics Menu -->
 
@@ -37,31 +37,31 @@
         <!-- Buttons Menu -->
         <div id="menu">
             <div class="button"  id="delete" onclick="erase()">
-                <img src="images/delete.png" />
+                <img src="img/delete.png" />
             </div>
             <div class="spacer"></div>
             <div class="button active" id="black" onclick="set_color(this)">
-                <img src="images/black-marker.png" />
+                <img src="img/black-marker.png" />
             </div>
             <div class="button" id="red" onclick="set_color(this)">
-                <img src="images/red-marker.png" />
+                <img src="img/red-marker.png" />
             </div>
             <div class="button" id="blue" onclick="set_color(this)">
-                <img src="images/blue-marker.png" />
+                <img src="img/blue-marker.png" />
             </div>
             <div class="button" id="eraser" onclick="set_color(this)">
-                <img src="images/eraser.png" />
+                <img src="img/eraser.png" />
             </div>
             <div class="spacer"></div>
             <div class="button active" id="solid" onclick="line_type(this)">
-                <img src="images/line-solid.png" />
+                <img src="img/line-solid.png" />
             </div>
             <div class="button" id="dashed" onclick="line_type(this)">
-                <img src="images/line-dashed.png" />
+                <img src="img/line-dashed.png" />
             </div>
             <div class="spacer"></div>
             <div class="button active" id="info" onclick="show_info(this)">
-                <img src="images/info.png" />
+                <img src="img/info.png" />
             </div>
         </div>
         <!-- /Buttons Menu -->

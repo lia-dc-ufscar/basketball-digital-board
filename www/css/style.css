@@ -13,7 +13,7 @@
 /* Application container */
 
 #container {
-	background: url('images/background.png');
+	background: url('../img/background.png');
 	width: 1280px;
 	height: 752px;
 }
@@ -33,7 +33,7 @@
 	margin-left: 11px;
 	width: 30px;
 	height: 30px;
-	background: url('images/mover.png');
+	background: url('../img/mover.png');
 }
 
 /* Saved tactics menu */
@@ -61,16 +61,16 @@
 	margin-left: 15px;
 	width: 88px;
 	height: 88px;
-	background: url('images/button.png');
+	background: url('../img/button.png');
 }
 
 .active {
-	background: url('images/button-act.png');
+	background: url('../img/button-act.png');
 }
 
 .spacer {
 	float: left;
-	background: url('images/divider.png') center no-repeat;
+	background: url('../img/divider.png') center no-repeat;
 	height: 73px;
 	width: 2px;
 	margin: 6px 20px 0 35px;
@@ -86,7 +86,7 @@
 
 #balloon-save-open {
 	position: absolute;
-	background: url('images/info/save-open.png');
+	background: url('../img/info/save-open.png');
 	width: 282px;
 	height: 234px;
 	margin-left: 830px;
@@ -95,7 +95,7 @@
 
 #balloon-delete {
 	position: absolute;
-	background: url('images/info/delete.png');
+	background: url('../img/info/delete.png');
 	width: 272px;
 	height: 132px;
 	margin-left: 70px;
@@ -104,7 +104,7 @@
 
 #balloon-info-help {
 	position: absolute;
-	background: url('images/info/info-help.png');
+	background: url('../img/info/info-help.png');
 	width: 272px;
 	height: 98px;
 	margin-left: 790px;
