@@ -45,12 +45,12 @@ function init() {
 
 function set_color(obj) {
     // Reset classes to simple button
-    if ($("#black").hasClass("active"))
-        $("#black").removeClass("active");
-    else if ($("#blue").hasClass("active"))
+    if ($("#blue").hasClass("active"))
         $("#blue").removeClass("active");
     else if ($("#red").hasClass("active"))
         $("#red").removeClass("active");
+    else if ($("#green").hasClass("active"))
+        $("#green").removeClass("active");
     else if ($("#eraser").hasClass("active")) {
         $("#eraser").removeClass("active");
         ctx.lineWidth = 3;
@@ -63,7 +63,7 @@ function set_color(obj) {
     // Select line color
     if (obj.id == 'eraser') {
         ctx.globalCompositeOperation = 'destination-out';
-        ctx.lineWidth = 20;
+        ctx.lineWidth = 30;
     } else
         ctx.strokeStyle = obj.id;
 }

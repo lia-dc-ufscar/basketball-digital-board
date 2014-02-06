@@ -12,7 +12,7 @@ ctx = canvas.getContext('2d'); // get 2D context
 
 /*********** handle mouse events on canvas **************/
 var mousedown = false;
-ctx.strokeStyle = 'black';
+ctx.strokeStyle = 'blue';
 ctx.lineWidth = 3;
 canvas.onmousedown = function(e) {
     var pos = fixPosition(e, canvas);
