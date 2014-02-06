@@ -10,6 +10,11 @@
 	padding: 0;
 }
 
+/* Disabled class */
+.disabled {
+	opacity: 0.3;
+}
+
 /* Application container */
 
 #container {
