@@ -9,6 +9,8 @@
 $(function(){
 canvas = document.getElementById('court'),
 ctx = canvas.getContext('2d'); // get 2D context
+ctx.lineCap   = 'round'; // Make pen round
+ctx.lineJoin = 'round'; // And connect roundly
 
 /*********** handle mouse events on canvas **************/
 var mousedown = false;
