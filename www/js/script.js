@@ -8,8 +8,6 @@
 // Parameters:  none
 // Return:      none
 function init() {
-    svgCanvas = new SvgCanvas(document.getElementById("court"));
-
     //  The piece of code below will get touches to behave like
     //  mouse clicks.
     //  Code originally from:
