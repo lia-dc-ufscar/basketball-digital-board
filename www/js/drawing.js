@@ -12,10 +12,12 @@ ctx = canvas.getContext('2d'); // get 2D context
 ctx.lineCap   = 'round'; // Make pen round
 ctx.lineJoin = 'round'; // And connect roundly
 
-/*********** handle mouse events on canvas **************/
+// Set initial settings
 var mousedown = false;
-ctx.strokeStyle = 'blue';
-ctx.lineWidth = 3;
+ctx.strokeStyle = defaultColor;
+ctx.lineWidth = defaultSize;
+
+/*********** handle mouse events on canvas **************/
 canvas.onmousedown = function(e) {
     var pos = fixPosition(e, canvas);
     mousedown = true;

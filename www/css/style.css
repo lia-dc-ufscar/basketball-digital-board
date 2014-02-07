@@ -95,7 +95,7 @@
 	width: 282px;
 	height: 234px;
 	margin-left: 830px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 #balloon-delete {
@@ -103,7 +103,7 @@
 	background: url('../img/info/delete.png');
 	width: 272px;
 	height: 132px;
-	margin-left: 70px;
+	margin-left: 60px;
 	margin-top: 515px;
 }
 
@@ -112,6 +112,6 @@
 	background: url('../img/info/info-help.png');
 	width: 272px;
 	height: 98px;
-	margin-left: 790px;
+	margin-left: 793px;
 	margin-top: 550px;
 }

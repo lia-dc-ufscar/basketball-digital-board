@@ -3,6 +3,11 @@
 //  Authors:    Yago Arroyo Gonçalves
 //              George Pagliuso
 
+// Set Default settings
+defaultSize = 4;
+eraserSize = 30;
+defaultColor = '#00f';
+
 // Function:    init
 // Objective:   Initialize SVG Canvas with court's div
 // Parameters:  none
@@ -36,8 +41,7 @@ function init() {
 }
 
 // Function:    set_color
-// Objective:   Change line type from solid to dashed
-//              and vice-versa
+// Objective:   Change line stroke color or set tool to eraser
 // Parameters:  obj: object containing the selected color's button
 // Return:      none
 
@@ -51,19 +55,29 @@ function set_color(obj) {
         $("#green").removeClass("active");
     else if ($("#eraser").hasClass("active")) {
         $("#eraser").removeClass("active");
-        ctx.lineWidth = 3;
+        ctx.lineWidth = defaultSize;
         ctx.globalCompositeOperation = 'source-over';
     }
 
     // Make clicked active
     $("#"+obj.id).addClass("active");
 
-    // Select line color
-    if (obj.id == 'eraser') {
+    // Select line color or eraser
+    switch (obj.id) {
+    case 'blue':
+        ctx.strokeStyle = '#00f';
+        break;
+    case 'red':
+        ctx.strokeStyle = '#f00';
+        break;
+    case 'green':
+        ctx.strokeStyle = '#0f0';
+        break;
+    case 'eraser':
         ctx.globalCompositeOperation = 'destination-out';
-        ctx.lineWidth = 30;
-    } else
-        ctx.strokeStyle = obj.id;
+        ctx.lineWidth = eraserSize;
+        break;
+    }
 }
 
 // Function:    line_type
