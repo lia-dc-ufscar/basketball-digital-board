@@ -38,6 +38,10 @@ canvas.onmouseup = function(e) {
     mousedown = false;
 };
 
+canvas.onmouseleave = function(e) {
+    mousedown = false;
+};
+
 /********** utils ******************/
 // Thanks to http://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element/4430498#4430498
 function fixPosition(e, gCanvasElement) {
